@@ -1,0 +1,24 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppEventos.Views.CadastroEvento"
+             Title="Cadastro de Evento">
+
+    <ScrollView>
+        
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <Entry Placeholder="Nome do Evento" x:Name="txtNome" />
+            <DatePicker x:Name="dtInicio" />
+            <DatePicker x:Name="dtTermino" />
+            <Entry Placeholder="Número de Participantes" Keyboard="Numeric" x:Name="txtParticipantes" />
+            <Entry Placeholder="Local do Evento" x:Name="txtLocal" />
+            <Entry Placeholder="Custo por Participante (R$)" Keyboard="Numeric" x:Name="txtCusto" />
+
+            <Button Text="Cadastrar Evento"
+                    BackgroundColor="DarkBlue"
+                    TextColor="White"
+                    Clicked="OnCadastrarClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
