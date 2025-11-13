@@ -7,9 +7,7 @@
 
     <ScrollView>
 
-        <VerticalStackLayout Padding="10" Spacing="10"
-                             
-                             >
+        <VerticalStackLayout Padding="10" Spacing="10">
 
             <Entry Placeholder="Nome do Evento" x:Name="txtNome" TextColor="GreenYellow" FontSize="20"/>
             <DatePicker x:Name="dtInicio" 
